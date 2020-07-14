@@ -54,3 +54,26 @@ Get-Website -Name %q | ConvertTo-Json -Compress
 	}
 	return &website, nil
 }
+
+func (c *WebsitesClient) GetAll() (*[]getWebsiteResponse, error) {
+	commands := fmt.Sprint(`
+		Import-Module WebAdministration
+		Get-Website -Name | ConvertTo-Json -Compress`)
+
+	stdout, _, err := c.Run(commands)
+	if err != nil {
+		return nil, fmt.Errorf("Error retrieving Website: %+v", err)
+	}
+
+	var sites []getWebsiteResponse
+	if out := stdout; out != nil && *out != "" {
+		v := *out
+		err := json.Unmarshal([]byte(v), &sites)
+		if err != nil {
+			return nil, fmt.Errorf("Error unmarshalling Website: %+v", err)
+		}
+	}
+
+
+	return &sites, nil
+}

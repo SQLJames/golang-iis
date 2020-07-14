@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/tombuildsstuff/golang-iis/iis/applicationpools"
-	"github.com/tombuildsstuff/golang-iis/iis/cmd"
-	"github.com/tombuildsstuff/golang-iis/iis/helpers"
+	"github.com/SQLJames/golang-iis/iis/applicationpools"
+	"github.com/SQLJames/golang-iis/iis/cmd"
+	"github.com/SQLJames/golang-iis/iis/helpers"
 )
 
 func TestAppSetting(t *testing.T) {

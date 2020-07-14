@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/tombuildsstuff/golang-iis/iis/helpers"
+	"github.com/SQLJames/golang-iis/iis/helpers"
 )
 
 func TestApplicationPoolLifecycle(t *testing.T) {

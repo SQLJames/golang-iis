@@ -1,7 +1,7 @@
 package applicationpools
 
 import (
-	"github.com/tombuildsstuff/golang-iis/iis/cmd"
+	"github.com/SQLJames/golang-iis/iis/cmd"
 )
 
 type AppPoolsClient struct {

@@ -1,7 +1,7 @@
 locals {
   custom_data_params  = "Param($ComputerName = \"${local.virtual_machine_name}\")"
   custom_data_content = "${local.custom_data_params} ${file("./files/winrm.ps1")}"
-  checkout_path       = "C:\\Users\\${local.admin_username}\\go\\src\\github.com\\tombuildsstuff\\golang-iis"
+  checkout_path       = "C:\\Users\\${local.admin_username}\\go\\src\\github.com\\SQLJames\\golang-iis"
 }
 
 resource "azurerm_virtual_machine" "main" {

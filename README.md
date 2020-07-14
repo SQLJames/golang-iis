@@ -17,7 +17,7 @@ Good question. IIS is a bit of a unmanageable beast - this library tries to make
 import (
   "log"
 
-  "github.com/tombuildsstuff/golang-iis/iis"
+  "github.com/SQLJames/golang-iis/iis"
 )
 
 func main() {
@@ -56,13 +56,13 @@ func run(websiteName string, appPoolName string, physicalPath string) error {
 }
 ```
 
-More examples can be found in [the `./examples` directory](https://github.com/tombuildsstuff/golang-iis/tree/master/examples) in the root of this repository.
+More examples can be found in [the `./examples` directory](https://github.com/SQLJames/golang-iis/tree/master/examples) in the root of this repository.
 
 ## Running the Tests
 
 If you're running Windows and have IIS installed, you should be able to run `go test -v ./... -parallel=1` and things should run. This is significantly quicker than provisioning the Virtual Machine since the files don't need to be replicated.
 
-If you're not running Windows - there's a [HashiCorp Terraform](https://terraform.io) script available which will provision a Windows VM (currently only in Azure, but other providers would be cool) which runs the tests remotely [which can be found here](https://github.com/tombuildsstuff/golang-iis/tree/master/terraform).
+If you're not running Windows - there's a [HashiCorp Terraform](https://terraform.io) script available which will provision a Windows VM (currently only in Azure, but other providers would be cool) which runs the tests remotely [which can be found here](https://github.com/SQLJames/golang-iis/tree/master/terraform).
 
 ## Licence
 

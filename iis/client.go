@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/tombuildsstuff/golang-iis/iis/applicationpools"
-	"github.com/tombuildsstuff/golang-iis/iis/cmd"
-	"github.com/tombuildsstuff/golang-iis/iis/websites"
+	"github.com/SQLJames/golang-iis/iis/applicationpools"
+	"github.com/SQLJames/golang-iis/iis/cmd"
+	"github.com/SQLJames/golang-iis/iis/websites"
 )
 
 type Client struct {

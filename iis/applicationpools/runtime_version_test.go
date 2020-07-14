@@ -5,8 +5,8 @@ import (
 	"log"
 	"testing"
 
-	"github.com/tombuildsstuff/golang-iis/iis/cmd"
-	"github.com/tombuildsstuff/golang-iis/iis/helpers"
+	"github.com/SQLJames/golang-iis/iis/cmd"
+	"github.com/SQLJames/golang-iis/iis/helpers"
 )
 
 func TestRuntimeVersion(t *testing.T) {

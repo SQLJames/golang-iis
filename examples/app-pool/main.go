@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/tombuildsstuff/golang-iis/iis/applicationpools"
-	"github.com/tombuildsstuff/golang-iis/iis/helpers"
+	"github.com/SQLJames/golang-iis/iis/applicationpools"
+	"github.com/SQLJames/golang-iis/iis/helpers"
 
-	"github.com/tombuildsstuff/golang-iis/iis"
+	"github.com/SQLJames/golang-iis/iis"
 )
 
 func main() {

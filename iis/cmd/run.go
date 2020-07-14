@@ -7,7 +7,7 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/tombuildsstuff/golang-iis/iis/helpers"
+	"github.com/SQLJames/golang-iis/iis/helpers"
 )
 
 func (c Client) Run(commands string) (*string, *string, error) {
